@@ -1,0 +1,46 @@
+:root {
+  --bg: #eef4fb; --card: #ffffff; --text: #1e2a3a; --muted: #5b6b80;
+  --primary: #0f9d58; --primary-hover: #0b7d46; --chip: #e3eefa;
+  --shadow: 0 12px 32px #1e3a5f20;
+}
+[data-theme="dark"] {
+  --bg: #0f1722; --card: #1a2433; --text: #e6edf5; --muted: #9fb0c4;
+  --primary: #34c27a; --primary-hover: #2aa566; --chip: #24324a;
+  --shadow: 0 12px 32px #00000060;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: system-ui, sans-serif; background: var(--bg); color: var(--text);
+  margin: 0; min-height: 100vh; transition: background .3s, color .3s;
+}
+a { color: var(--primary); }
+.topbar {
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;
+  padding: 14px 24px; background: var(--card); box-shadow: var(--shadow);
+  position: sticky; top: 0; z-index: 10;
+}
+.logo { font-weight: 700; }
+nav { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+nav a { text-decoration: none; color: var(--text); }
+nav a:hover { color: var(--primary); }
+main { max-width: 760px; margin: 32px auto; padding: 0 16px; display: grid; gap: 24px; }
+.card {
+  background: var(--card); padding: 32px; border-radius: 18px;
+  box-shadow: var(--shadow); transition: background .3s;
+}
+.hero { text-align: center; }
+.hero h1 { margin-top: 0; }
+#status { color: var(--muted); font-weight: 600; }
+.actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+button {
+  background: var(--primary); color: white; border: 0;
+  padding: 12px 22px; border-radius: 8px; cursor: pointer; font-size: 1rem;
+}
+button:hover { background: var(--primary-hover); }
+button.secondary { background: #6c5ce7; }
+button.secondary:hover { background: #5a4bd1; }
+button.ghost { background: var(--chip); color: var(--text); padding: 8px 14px; }
+.skills { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.skills li { background: var(--chip); padding: 8px 16px; border-radius: 999px; }
+footer { text-align: center; color: var(--muted); padding: 24px; font-size: .9rem; }

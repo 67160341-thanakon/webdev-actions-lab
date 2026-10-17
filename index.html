@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="th" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My GitHub Pages Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <span class="logo">WebDev Lab</span>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <button id="themeBtn" class="ghost" aria-label="Toggle theme">🌙 Dark</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card hero">
+      <h1>Welcome to My Web Development Lab 🚀</h1>
+      <p>ชื่อ: นายธนากร ดวงจันทร์ | รหัสนิสิต: 67160341</p>
+      <p id="status">Ready to deploy</p>
+      <div class="actions">
+        <button id="helloBtn">Say Hello</button>
+        <button id="msgBtn" class="secondary">เปลี่ยนข้อความ</button>
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>สวัสดีครับ/ค่ะ ผมเป็นนิสิตมหาวิทยาลัยบูรพา กำลังเรียนรู้การพัฒนาเว็บไซต์
+        และการใช้ Git, GitHub Actions และ GitHub Pages เพื่อ Deploy เว็บไซต์แบบอัตโนมัติ (CI/CD)</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        <li>Git</li><li>GitHub Actions</li><li>GitHub Pages</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>📧 Email: <a href="mailto:67160341@go.buu.ac.th">67160341@go.buu.ac.th</a></p>
+      <p>🐙 GitHub: <a href="https://github.com/67160341">github.com/67160341</a></p>
+    </section>
+  </main>
+
+  <footer>Deployed automatically with GitHub Actions → GitHub Pages</footer>
+  <script src="script.js"></script>
+</body>
+</html>
